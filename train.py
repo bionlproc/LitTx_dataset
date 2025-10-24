@@ -401,7 +401,7 @@ if __name__ == "__main__":
     parser.add_argument("--do_train", action='store_true')
     parser.add_argument("--do_eval_on_test", action='store_true')
     parser.add_argument("--model_id", type=str, required=True)      # HF model id
-    parser.add_argument("--dataset_name", type=str, required=True)  # HF dataset id
+    parser.add_argument("--dataset_name", type=str, required=True)  
     parser.add_argument("--access_token", type=str, required=True)  # HF token for gated models
 
     args = parser.parse_args()
