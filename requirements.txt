@@ -1,0 +1,9 @@
+transformers>=4.35.2
+datasets>=2.14.6
+huggingface_hub>=0.19.4
+scikit-learn>=1.3.2
+tqdm>=4.66.1
+torch>=2.1.0
+accelerate>=0.24.1
+numpy>=1.24.4
+cryptography
