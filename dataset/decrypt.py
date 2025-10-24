@@ -103,14 +103,14 @@ if __name__ == '__main__':
     # pickle_save_encrypted(dev, 'dev.save', 'public_key.pem')
     # pickle_save_encrypted(test, 'test.save', 'public_key.pem')
 
-    train = 'train.save'
-    dev = 'dev.save'
-    test = 'test.save'
+    train = 'dataset/train.save'
+    dev = 'dataset/dev.save'
+    test = 'dataset/test.save'
 
     train = pickle_load_encrypted(train, 'private_key.pem')
     dev = pickle_load_encrypted(dev, 'private_key.pem')
     test = pickle_load_encrypted(test, 'private_key.pem')
 
-    json_save(train, 'train.json')
-    json_save(dev, 'dev.json')
-    json_save(test, 'test.json')
+    json_save(train, 'dataset/train.json')
+    json_save(dev, 'dataset/dev.json')
+    json_save(test, 'dataset/test.json')
