@@ -399,18 +399,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--output_dir", type=str, required=True)
-    parser.add_argument("--model_type", type=str, required=True)  # NOTE: not used in code
     parser.add_argument("--per_device_train_batch_size", type=int, required=True)
     parser.add_argument("--gradient_accumulation_steps", type=int, required=True)
     parser.add_argument("--num_train_epochs", type=int, required=True)
     parser.add_argument("--learning_rate", type=float, required=True)
-    parser.add_argument("--optim", type=str, required=True)
-    parser.add_argument("--max_new_tokens", type=int, default=256)  # used by evaluate()
-    parser.add_argument("--isLora", action='store_true')            # NOTE: not used
-    parser.add_argument("--dataset_name", type=str, required=True)
-    parser.add_argument("--access_token", type=str, required=True)
+    parser.add_argument("--optim", type=str, required=True)  # e.g., adamw_torch
     parser.add_argument("--do_train", action='store_true')
     parser.add_argument("--do_eval_on_test", action='store_true')
+    parser.add_argument("--model_id", type=str, required=True)      # HF model id
+    parser.add_argument("--dataset_name", type=str, required=True)  
+    parser.add_argument("--access_token", type=str, required=True)  # HF token for gated models
 
     args = parser.parse_args()
     main(args)
