@@ -95,13 +95,6 @@ def pickle_load_encrypted(filename, private_key_path, password=None):
     return pickle.loads(data)
 
 if __name__ == '__main__':
-    # train = json_load('train.json')
-    # dev = json_load('dev.json')
-    # test = json_load('test.json')
-
-    # pickle_save_encrypted(train, 'train.save', 'public_key.pem')
-    # pickle_save_encrypted(dev, 'dev.save', 'public_key.pem')
-    # pickle_save_encrypted(test, 'test.save', 'public_key.pem')
 
     train = 'train.save'
     dev = 'dev.save'
