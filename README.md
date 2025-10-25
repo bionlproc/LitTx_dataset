@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ### 3. Train and Evaluate Models
 
 Update your `train_args.py` file with your [Hugging Face access token](https://huggingface.co/docs/hub/en/security-tokens) to enable model downloads and authentication.  
-Once updated, start training and evaluation on the **LitDDTx** dataset by running:
+Once updated, start training and evaluation on the **LitTx** dataset by running:
 
 ```bash
 python train_args.py
