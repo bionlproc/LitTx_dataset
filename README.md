@@ -1,4 +1,4 @@
-# LitDDTx: A New Drug-Disease Treatment Relation Extraction Dataset
+# LitTx: A New Treatment Relation Extraction Dataset
 
 ## Setup
 
