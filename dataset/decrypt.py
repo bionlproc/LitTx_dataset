@@ -95,22 +95,23 @@ def pickle_load_encrypted(filename, private_key_path, password=None):
     return pickle.loads(data)
 
 if __name__ == '__main__':
-    train = json_load('train.json')
-    dev = json_load('dev.json')
-    test = json_load('test.json')
+    # train = json_load('train.json')
+    # dev = json_load('dev.json')
+    # test = json_load('test.json')
 
-    pickle_save_encrypted(train, 'train.save', 'public_key.pem')
-    pickle_save_encrypted(dev, 'dev.save', 'public_key.pem')
-    pickle_save_encrypted(test, 'test.save', 'public_key.pem')
+    # pickle_save_encrypted(train, 'train.save', 'public_key.pem')
+    # pickle_save_encrypted(dev, 'dev.save', 'public_key.pem')
+    # pickle_save_encrypted(test, 'test.save', 'public_key.pem')
 
-    # train = 'train.save'
-    # dev = 'dev.save'
-    # test = 'test.save'
+    train = 'train.save'
+    dev = 'dev.save'
+    test = 'test.save'
 
-    # train = pickle_load_encrypted(train, 'private_key.pem')
-    # dev = pickle_load_encrypted(dev, 'private_key.pem')
-    # test = pickle_load_encrypted(test, 'private_key.pem')
+    train = pickle_load_encrypted(train, 'private_key.pem')
+    dev = pickle_load_encrypted(dev, 'private_key.pem')
+    test = pickle_load_encrypted(test, 'private_key.pem')
 
-    # json_save(train, 'train.json')
-    # json_save(dev, 'dev.json')
-    # json_save(test, 'test.json')
+    json_save(train, 'train.json')
+    json_save(dev, 'dev.json')
+    json_save(test, 'test.json')
+    print('all files are decrypted to .json')
