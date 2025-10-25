@@ -8,7 +8,8 @@ Our dataset is encrypted for controlled distribution.
 To decrypt it, run the following command:
 
 ```bash
-python dataset/decrypt.py
+cd dataset
+python decrypt.py
 ```
 
 ---
