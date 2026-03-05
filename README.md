@@ -35,4 +35,9 @@ python train_args.py
 
 This will automatically train the model and evaluate its performance on the dataset.
 
+---
+
+### 4. Annotation Guideline
+
+Please find the information in the [annotation guideline](./LitTx_guidelines.docx).
 
