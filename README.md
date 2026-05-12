@@ -41,5 +41,22 @@ This will automatically train the model and evaluate its performance on the data
 
 Please find the information in the [annotation guideline](./LitTx_guidelines.docx).
 
+---
+
+## Citation
+
+If you use **LitTx** in your research, please cite:
+
+```bibtex
+@inproceedings{jiang-etal-2026-littx,
+  title = {LitTx: A New Treatment Relation Extraction Dataset},
+  author = {Jiang, Yuhang and Nahian, Md Sultan Al and Xu, Li Hao Richie and Chikkanna, Rani and Kavuluru, Ramakanth},
+  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+  month = {May},
+  year = {2026},
+  pages = {1352--1360}
+}
+```
+
 
 
